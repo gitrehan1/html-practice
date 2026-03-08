@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sushi</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Sushi</h1>
+    <p>Sushi is a traditional Japanese dish defined by seasoned vinegared rice (shari), typically paired with ingredients like raw or cooked seafood, vegetables, or egg.</p>
+    <h2>
+      Ingredients
+    </h2>
+    <ul>
+      <li>Sushi Rice</li>
+      <li>Nori</li>
+      <li>Rice Vinegar/Seasoning</li>
+      <li>Sushi-Grade Fish</li>
+    </ul>
+    <h2>
+      Instructions
+    </h2>
+    <ol>
+      <li>Boil Rice</li>
+      <li>Place Rice on Bamboo Mat</li>
+      <li>Add Ingredients</li>
+      <li>Role Sushi</li>
+    </ol>
+  </body>
+  <img src="https://int.japanesetaste.com/cdn/shop/articles/how-to-make-makizushi-sushi-rolls-japanese-taste_09423a89-43c3-4c23-bcc9-857db5f85236.webp?v=1763449768&width=300" alt="Sushi in a plate.">
+</html>
