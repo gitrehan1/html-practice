@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+<style>
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+</style>
+    <title>Japanese Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">日本文化アンケート</h1>
+    <p id="description">Japanese Culture Survey</p>
+    
+    <form id="survey-form" action="" method="post">
+
+      <fieldset>
+        <legend>Personal Information (個人情報)</legend>
+        <label for="name" id="name-label">Full Name: </label>
+        <input id="name" type="text" name="name" placeholder="John Doe" required/><br>
+        <label for="email" id="email-label">Email Address: </label>
+        <input id="email" name="email" type="email" placeholder="email@example.com" required/><br>
+        <label for="number" id="number-label">Age: (Optional)</label>
+        <input id="number" name="age" type="number" min="13" max="100" placeholder="18">
+      </fieldset>
+
+      <fieldset>
+        <legend>User Feedback</legend>
+
+        <fieldset>
+          <legend>How familiar are you with Japanese culture?</legend>
+          <select name="familiarity" id="dropdown" required>
+            <option value="" disabled selected>Select your familiarity</option>
+            <option value="beginner">Beginner</option>
+            <option value="some-knowledge">Some knowledge</option>
+            <option value="very-familiar">Very familiar</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Have you ever visited Japan?</legend>
+          <input id="yes" type="radio" name="choice" value="yes" required>
+          <label for="yes">Yes</label><br>
+          <input id="no" value="no" type="radio" name="choice">
+          <label for="no">No</label><br>
+          <input id="planning" type="radio" value="planning" name="choice">
+          <label for="planning">Planning to visit</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which parts of Japanese culture interest you?</legend>
+          <input value="anime" type="checkbox" id="anime" name="interest[]">
+          <label for="anime">Anime</label><br>
+          <input value="food" type="checkbox" id="food" name="interest[]">
+          <label for="food">Food</label><br>
+          <input value="traditions" type="checkbox" id="traditions" name="interest[]">
+          <label for="traditions">Traditions</label><br>
+          <input value="art" type="checkbox" id="art" name="interest[]">
+          <label for="art">Art</label><br>
+          <input value="language" type="checkbox" id="language" name="interest[]">
+          <label for="language">Language</label><br>
+          <input value="travel" type="checkbox" id="travel" name="interest[]">
+          <label for="travel">Travel</label><br>
+          <input value="music" type="checkbox" id="music" name="interest[]">
+          <label for="music">Music</label><br>
+        </fieldset>
+
+      </fieldset>
+
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <label for="comments">Feel free to share any additional thoughts about Japanese culture:</label><br>
+          <textarea name="comments" id="comments" rows="4" cols="40" placeholder="Share your thoughts about Japanese culture..."></textarea>
+        </fieldset>
+      
+      <button id="submit" type="submit">Submit Survey</button>
+    
+    </form>
+  </body>
+</html>
